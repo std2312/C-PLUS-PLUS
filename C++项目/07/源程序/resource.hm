@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by bbb.rc
+//
+#define HIDC_PROVIDERLIST               0x80c00403    // IDD_BOOK_INPUT2

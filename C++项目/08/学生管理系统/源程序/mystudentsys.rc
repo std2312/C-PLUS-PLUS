@@ -1,0 +1,744 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mystudentsys.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\mystudentsys.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\42.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 244, 74
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "关于 mystudentsys"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,16,18,48,39
+    LTEXT           "学生信息管理系统 1.0 版",IDC_STATIC,88,30,94,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2005",IDC_STATIC,88,45,93,8
+    DEFPUSHBUTTON   "确定",IDOK,187,33,50,14,WS_GROUP
+END
+
+IDD_MYSTUDENTSYS_DIALOG DIALOGEX 0, 0, 472, 377
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "学生信息管理系统"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,
+                    472,377
+END
+
+IDD_DIgofficeinfo DIALOG DISCARDABLE  0, 0, 243, 127
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "科室信息管理"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "返回",IDCANCEL,181,74,35,14,BS_FLAT
+    LTEXT           "科室名称：",IDC_STATIC,73,34,43,12
+    EDITTEXT        IDC_EDIT_officename,126,31,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "向前",IDC_BUTTON_pre,74,56,35,14,BS_FLAT
+    PUSHBUTTON      "向后",IDC_BUTTON_next,127,56,35,14,BS_FLAT
+    PUSHBUTTON      "最后一条",IDC_BUTTON_last,181,56,35,14,BS_FLAT
+    PUSHBUTTON      "第一条",IDC_BUTTON_first,23,56,35,14,BS_FLAT
+    PUSHBUTTON      "添加",IDC_BUTTON_add,23,74,35,14,BS_FLAT
+    PUSHBUTTON      "删除",IDC_BUTTON_del,127,74,35,14,BS_FLAT
+    PUSHBUTTON      "保存",IDC_BUTTON_save,74,74,35,14,BS_FLAT
+    GROUPBOX        "",IDC_STATIC,19,22,206,76
+END
+
+IDD_DIg_subjectinfo DIALOG DISCARDABLE  0, 0, 243, 139
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "科目信息管理"
+FONT 10, "System"
+BEGIN
+    LTEXT           "科目名称：",IDC_STATIC,64,56,51,11
+    LTEXT           "科目代码：",IDC_STATIC,64,74,49,11
+    EDITTEXT        IDC_subjectname,130,53,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_subjectid,130,71,52,14,ES_AUTOHSCROLL
+    GROUPBOX        "请输入:",IDC_STATIC,32,33,178,69
+END
+
+IDD_DIgteacherinfo DIALOG DISCARDABLE  0, 0, 242, 120
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "教师信息管理"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请输入",IDC_STATIC,11,21,220,86
+    LTEXT           "教师姓名：",IDC_STATIC,22,41,42,8
+    LTEXT           "教师编号：",IDC_STATIC,22,61,42,8
+    LTEXT           "性         别：",IDC_STATIC,124,41,42,8
+    LTEXT           "科         室：",IDC_STATIC,124,61,42,8
+    LTEXT           "学        历：",IDC_STATIC,22,81,42,8
+    LTEXT           "级         别：",IDC_STATIC,124,81,42,8
+    EDITTEXT        IDC_teachername,66,40,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_teacherid,66,59,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_teacherkonwledge,66,78,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_teacheroffice,173,59,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_teacherlevel,173,78,46,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_teachersex,173,40,46,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIgclassinfo DIALOG DISCARDABLE  0, 0, 243, 140
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "班级信息管理"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请输入",IDC_STATIC,32,29,179,83
+    LTEXT           "班级名称：",IDC_STATIC,64,59,48,11
+    LTEXT           "班  主  任：",IDC_STATIC,64,78,50,11
+    EDITTEXT        IDC_EDIT_classname,137,57,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_classteacher,137,78,47,12,ES_AUTOHSCROLL
+END
+
+IDD_DIgclass_subject DIALOG DISCARDABLE  0, 0, 242, 138
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "班级科目设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请输入",IDC_STATIC,38,29,166,76
+    LTEXT           "班级名称：",IDC_STATIC,65,54,48,12
+    LTEXT           "科目代码：",IDC_STATIC,65,73,55,12
+    EDITTEXT        IDC_EDITclassname,134,53,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITclassid,134,74,46,12,ES_AUTOHSCROLL
+END
+
+IDD_DIgexamkind DIALOG DISCARDABLE  0, 0, 242, 105
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "考试类别设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请输入",IDC_STATIC,20,28,201,48
+    LTEXT           "考试类别名称：",IDC_STATIC,55,49,57,12
+    EDITTEXT        IDC_EDIT_examkind,145,47,46,14,ES_AUTOHSCROLL
+END
+
+IDD_DIgexaminfo_submark DIALOG DISCARDABLE  0, 0, 244, 164
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "学生成绩录入"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "返回",IDCANCEL,140,137,50,14
+    LTEXT           "学生编号：",IDC_STATIC,54,30,52,11
+    LTEXT           "考试科目：",IDC_STATIC,54,50,52,11
+    LTEXT           "考试成绩：",IDC_STATIC,54,70,52,11
+    LTEXT           "考试类别：",IDC_STATIC,54,90,52,11
+    LTEXT           "考试日期：",IDC_STATIC,54,110,52,11
+    GROUPBOX        "请输入",IDC_STATIC,19,19,205,110
+    EDITTEXT        IDC_sutentid,129,30,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_examsubject,129,49,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_submarks,129,68,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_examkind,129,87,61,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_inputsave_marks,54,138,50,14
+    CONTROL         "DateTimePicker1",IDC_examdate_picker,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,129,106,61,13
+END
+
+IDD_DIgstudentinfo DIALOG DISCARDABLE  0, 0, 271, 175
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "学生信息查询"
+FONT 10, "System"
+BEGIN
+    LTEXT           "学生编号：",IDC_STATIC,18,14,41,8
+    EDITTEXT        IDC_findstudent_id,78,12,39,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_findstudentinfo,208,13,39,12
+    CONTROL         "List2",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,18,36,230,119
+END
+
+IDD_DIgregbreak_input DIALOG DISCARDABLE  0, 0, 243, 172
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "学生违规处理"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,174,144,54,14
+    GROUPBOX        "学生违规信息",IDC_STATIC,14,19,214,119
+    LTEXT           "学生编号：",IDC_STATIC,24,37,44,10
+    LTEXT           "违规内容：",IDC_STATIC,24,57,44,10
+    LTEXT           "处理结果：",IDC_STATIC,24,78,44,10
+    LTEXT           "备        注：",IDC_STATIC,24,97,44,10
+    LTEXT           "时        间：",IDC_STATIC,24,117,44,10
+    EDITTEXT        IDC_regbreakstudentid,78,35,56,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_regbreak_content,78,55,143,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_regbreak_result,78,75,143,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_regbreak_memo,78,95,143,12,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_regbreak_date,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,78,115,56,12
+    PUSHBUTTON      "保存违规记录",IDC_Btn_inputregbreak,101,144,54,14
+END
+
+IDD_DIgstudentreport DIALOG DISCARDABLE  0, 0, 207, 126
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "学生成绩报表"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "生成报表",IDC_Btnreport,134,93,56,14
+    GROUPBOX        "选择操作",IDC_STATIC,16,16,175,69
+    LTEXT           "所有的显示都将以EXCEL表格形式提供.您可以进行预览打印等操作!",
+                    IDC_STATIC,34,44,137,26
+END
+
+IDD_Dlgregbreak_find DIALOG DISCARDABLE  0, 0, 262, 205
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "学生违规查询"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "请输入学生编号查询",IDC_STATIC,17,13,226,36
+    LTEXT           "学生编号：",IDC_STATIC,36,30,40,11
+    EDITTEXT        IDC_EDIT_studentid,85,28,49,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_Btnfind_regbreakinfo,179,28,46,13
+    GROUPBOX        "查询结果",IDC_STATIC,17,54,228,80
+    LTEXT           "违规内容：",IDC_STATIC,36,69,40,11
+    LTEXT           "处理结果：",IDC_STATIC,36,85,40,11
+    LTEXT           "备        注：",IDC_STATIC,36,101,40,11
+    LTEXT           "时        间：",IDC_STATIC,36,117,40,11
+    CONTROL         "DateTimePicker1",IDC_regfind_date,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,80,116,53,12
+    EDITTEXT        IDC_EDIT_regcontent,80,67,146,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_reghandleresult,80,84,146,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_regmemo,80,99,146,13,ES_AUTOHSCROLL
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,17,139,228,51
+END
+
+IDD_DIggrade_leveldlg DIALOG DISCARDABLE  0, 0, 283, 198
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "成绩等级设置"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "设置区",IDC_STATIC,7,14,269,63
+    LTEXT           "成绩上限：",IDC_STATIC,35,55,46,11
+    LTEXT           "成绩下限：",IDC_STATIC,162,55,46,11
+    EDITTEXT        IDC_EDIT_upgrade,88,53,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_lowgrade,215,53,31,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_Btn_setgradelevel,203,32,43,14
+    CONTROL         "List1",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,106,269,78
+    PUSHBUTTON      "优秀查询",IDC_Btn_findbest,7,86,57,14
+    PUSHBUTTON      "良好查询",IDC_Btnfindbetter,77,86,57,14
+    PUSHBUTTON      "及格查询",IDC_Btnfindnormal,149,86,57,14
+    PUSHBUTTON      "不及格查询",IDC_Btnfindworse,219,86,57,14
+    COMBOBOX        IDC_COMBO1,102,32,48,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "请选择设置类别：",IDC_STATIC,34,34,65,9
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 174, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录框"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,83,22,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,83,44,58,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,33,69,50,14
+    PUSHBUTTON      "退出",IDCANCEL,91,69,50,14
+    LTEXT           "用户名：",IDC_STATIC,33,24,36,8
+    LTEXT           "密  码：",IDC_STATIC,33,46,36,8
+END
+
+IDD_Dlguser DIALOG DISCARDABLE  0, 0, 197, 108
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    7,7,89,95
+    LTEXT           "用户名：",IDC_STATIC,107,15,33,8
+    EDITTEXT        IDC_EDIT1,150,13,40,12,ES_AUTOHSCROLL
+    LTEXT           "密    码：",IDC_STATIC,107,39,33,8
+    EDITTEXT        IDC_EDIT2,150,37,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTADD,106,60,40,12
+    PUSHBUTTON      "修改",IDC_BUTMOD,150,60,40,12
+    PUSHBUTTON      "删除",IDC_BUTDEL,106,83,40,12
+    PUSHBUTTON      "返回",IDCANCEL,150,83,40,12
+END
+
+IDD_DIginfostudent DIALOG DISCARDABLE  0, 0, 268, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生信息管理"
+FONT 10, "System"
+BEGIN
+    LTEXT           "学生姓名：",IDC_STATIC,39,64,41,8
+    LTEXT           "性         别：",IDC_STATIC,140,64,43,8
+    LTEXT           "年        龄：",IDC_STATIC,39,85,40,9
+    LTEXT           "地         址：",IDC_STATIC,141,105,43,8
+    LTEXT           "班         级：",IDC_STATIC,140,86,43,8
+    LTEXT           "联系电话：",IDC_STATIC,39,105,41,8
+    EDITTEXT        IDC_studentsex,185,62,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_studentage,82,83,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_studentphone,82,103,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_studentname,82,62,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_studentclass,185,83,39,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_studentaddr,185,103,39,12,ES_AUTOHSCROLL
+    LTEXT           "学生编号：",IDC_STATIC,39,125,41,8
+    EDITTEXT        IDC_findstudent_id,82,123,39,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "mystudentsys Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "mystudentsys\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "mystudentsys.EXE\0"
+            VALUE "ProductName", "mystudentsys 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_MYSTUDENTSYS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 6
+    END
+
+    IDD_DIgofficeinfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_DIg_subjectinfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIgteacherinfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_DIgclassinfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DIgclass_subject, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIgexamkind, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIgexaminfo_submark, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIgstudentinfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIgregbreak_input, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIgstudentreport, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_Dlgregbreak_find, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_DIggrade_leveldlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_Dlguser, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DIginfostudent, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\ace.bmp"
+IDR_TOOLBAR_officeinfo  BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_TOOLBAR_subjectinfo BITMAP  DISCARDABLE     "res\\toolbar_.bmp"
+IDR_TOOLBAR_teacherinfo BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDR_TOOLBAR_classinfo   BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDR_TOOLBAR_classsubjectinfo BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDR_TOOLBAR_examkinds   BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\hua.bmp"
+IDB_BKBUTTON            BITMAP  DISCARDABLE     "res\\按钮.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_officeinfo TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_toolbar_add
+    BUTTON      ID_toolbar_save
+    BUTTON      ID_toolbar_del
+    BUTTON      ID_toolbar_first
+    BUTTON      ID_toolbar_pre
+    BUTTON      ID_toolbar_next
+    BUTTON      ID_toolbar_last
+END
+
+IDR_TOOLBAR_subjectinfo TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_subjectinfo_toolbar_add
+    BUTTON      ID_subjectinfo_toolbar_save
+    BUTTON      ID_subjectinfo_toolbar_del
+    BUTTON      ID_subjectinfo_toolbar_first
+    BUTTON      ID_subjectinfo_toolbar_pre
+    BUTTON      ID_subjectinfo_toolbar_next
+    BUTTON      ID_subjectinfo_toolbar_last
+END
+
+IDR_TOOLBAR_teacherinfo TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_teacherinfo_toolbar_add
+    BUTTON      ID_teacherinfo_toolbar_save
+    BUTTON      ID_teacherinfo_toolbar_del
+    BUTTON      ID_teacherinfo_toolbar_first
+    BUTTON      ID_teacherinfo_toolbar_pre
+    BUTTON      ID_teacherinfo_toolbar_next
+    BUTTON      ID_teacherinfo_toolbar_last
+END
+
+IDR_TOOLBAR_classinfo TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_classinfo_toolbar_add
+    BUTTON      ID_classinfo_toolbar_save
+    BUTTON      ID_classinfo_toolbar_del
+    BUTTON      ID_classinfo_toolbar_first
+    BUTTON      ID_classinfo_toolbar_pre
+    BUTTON      ID_classinfo_toolbar_next
+    BUTTON      ID_classinfo_toolbar_last
+END
+
+IDR_TOOLBAR_classsubjectinfo TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_classsubjectinfo_toolbar_add
+    BUTTON      ID_classsubjectinfo_toolbar_save
+    BUTTON      ID_classsubjectinfo_toolbar_del
+    BUTTON      ID_classsubjectinfo_toolbar_first
+    BUTTON      ID_classsubjectinfo_toolbar_pre
+    BUTTON      ID_classsubjectinfo_toolbar_next
+    BUTTON      ID_classsubjectinfo_toolbar_last
+END
+
+IDR_TOOLBAR_examkinds TOOLBAR DISCARDABLE  60, 20
+BEGIN
+    BUTTON      ID_toolbar_examkind_add
+    BUTTON      ID_toolbar_examkind_save
+    BUTTON      ID_toolbar_examkind_del
+    BUTTON      ID_toolbar_examkind_first
+    BUTTON      ID_toolbar_examkind_pre
+    BUTTON      ID_toolbar_examkind_next
+    BUTTON      ID_toolbar_examkind_last
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "基础信息管理"
+    BEGIN
+        MENUITEM "科室信息管理",                ID_MENU_officeinfo
+        MENUITEM "科目信息管理",                ID_MENU_subjectinfo
+        MENUITEM "教师信息管理",                ID_MENU_teacherinfo
+        MENUITEM "班级信息管理",                ID_MENU_classinfo
+        MENUITEM "班级科目设置",                ID_MENU_classsubject
+        MENUITEM "考试类别设置",                ID_MENU_examkind
+    END
+    POPUP "学生管理"
+    BEGIN
+        MENUITEM "学生信息管理",                ID_MENU_infostudent
+        MENUITEM "学生成绩录入",                ID_MENU_inputmarks
+        MENUITEM "成绩等级设置",                ID_MENU_gradeleveldlg
+        MENUITEM "学生违规处理",                ID_MENU_regbreakinfo
+    END
+    POPUP "查询管理"
+    BEGIN
+        MENUITEM "学生基础信息查询",            ID_MENU_studentinfo
+        MENUITEM "学生成绩报表",                ID_MENU_markreport
+        MENUITEM "学生违规查询",                ID_MENU_findbreakinfo
+    END
+    POPUP "系统管理"
+    BEGIN
+        MENUITEM "用户管理",                    ID_MENU_user
+        MENUITEM "退出系统",                    ID_MENU_exit
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "系统帮助",                    ID_MENU_help
+        MENUITEM "关于系统",                    ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIgteacherinfo DLGINIT
+BEGIN
+    IDC_COMBO_teachersex, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_teachersex, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+IDD_DIggrade_leveldlg DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xc5d3, 0xe3d0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbcc1, 0xc3ba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xb0bc, 0xf1b8, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xbbb2, 0xb0bc, 0xf1b8, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 mystudentsys(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\mystudentsys.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

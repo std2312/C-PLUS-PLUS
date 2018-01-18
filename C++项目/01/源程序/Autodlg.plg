@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Autodlg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\rosa\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Autodlg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"I:\项目开发全程实录\VC++\TM\01\源程序\Autodlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\rosa\LOCALS~1\Temp\RSP57.tmp" 
+Creating temporary file "D:\DOCUME~1\rosa\LOCALS~1\Temp\RSP58.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Autodlg.pdb" /debug /machine:I386 /out:"Debug/Autodlg.exe" /pdbtype:sept 
+".\Debug\Autodlg.obj"
+]
+Creating command line "link.exe @D:\DOCUME~1\rosa\LOCALS~1\Temp\RSP58.tmp"
+<h3>Output Window</h3>
+Compiling...
+Autodlg.cpp
+i:\项目开发全程实录\vc++\tm\01\源程序\stdafx.h(23) : fatal error C1083: Cannot open include file: 'Sa7134Capture.h': No such file or directory
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+Autodlg.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

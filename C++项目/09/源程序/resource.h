@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by ExamOnline.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_EXAMONLINE_DIALOG           102
+#define IDD_EXAMONLINE                  102
+#define IDR_MAINFRAME                   128
+#define IDD_LOGIN_DIALOG                129
+#define IDD_LOGIN                       129
+#define IDD_FINDPASSWD_DIALOG           130
+#define IDD_FINDPASSWD                  130
+#define IDD_BACKMANAGE_DIALOG           131
+#define IDD_BACKMANAGE                  131
+#define IDB_BITMAP1                     132
+#define IDD_REGISTER_DIALOG             134
+#define IDD_REGISTER                    134
+#define IDD_TEXTMANAGE                  137
+#define IDD_ADDSUBJECT                  138
+#define IDD_ADDTEST                     139
+#define IDD_TESTCHANGE                  140
+#define IDD_EXAMINFO                    141
+#define IDD_TESTRESULT                  145
+#define IDD_RESULTSELECT                146
+#define IDD_SQLMANAGE                   148
+#define IDD_COPY                        149
+#define IDD_SQLRETURN                   150
+#define IDC_EDIT_USERNAME               1003
+#define IDC_EDIT_USERPASSWD             1004
+#define IDC_COMBO_TYPE                  1005
+#define IDC_BUTTON_OK                   1006
+#define IDC_BUTTON_CANCEL               1007
+#define IDC_STATIC_QUESTION             1007
+#define IDC_BUTTON_REG                  1008
+#define IDC_EDIT1                       1008
+#define IDC_SubjectName                 1008
+#define IDC_EDITA                       1008
+#define IDC_Mark                        1008
+#define IDC_STATIC_PASSWD               1009
+#define IDC_EDIT_PASSWD                 1009
+#define IDC_PASSWD                      1009
+#define IDC_EDIT_PASSWD2                1010
+#define IDC_PASSWDREPEAT                1010
+#define IDC_STATIC_username             1010
+#define IDC_BUTTON_EXIT                 1011
+#define IDC_BUTTON_RESET                1011
+#define IDC_RESET                       1011
+#define IDC_BUTTON_SEND                 1012
+#define IDC_EDITB                       1012
+#define IDC_EDITC                       1013
+#define IDC_BUTTON_CHECK                1014
+#define IDC_CHECKNAME                   1014
+#define IDC_EDITD                       1014
+#define IDC_STATIC_TISHI                1015
+#define IDC_TISHI                       1015
+#define IDC_COMBO_QUESTION              1016
+#define IDC_QUESTION                    1016
+#define IDC_EDIT_ANSWER                 1017
+#define IDC_ANSWER                      1017
+#define IDC_EDIT3                       1018
+#define IDC_REALNAME                    1018
+#define IDC_TOTLE                       1018
+#define IDC_EDIT4                       1019
+#define IDC_AGE                         1019
+#define IDC_RADIO1                      1020
+#define IDC_SEXMALE                     1020
+#define IDC_RADIO_A                     1020
+#define IDC_RADIO2                      1021
+#define IDC_SEXFEMALE                   1021
+#define IDC_RADIO_B                     1021
+#define IDC_EDIT5                       1022
+#define IDC_PHONE                       1022
+#define IDC_RADIO_C                     1022
+#define IDC_RADIO_D                     1023
+#define IDC_IDCARD                      1023
+#define IDC_AGE2                        1024
+#define IDC_USERNAME                    1025
+#define IDC_REG                         1026
+#define IDC_BackTab                     1027
+#define IDC_TextTree                    1028
+#define IDC_TextList                    1029
+#define IDC_ADDTEST                     1030
+#define IDC_CHANGE                      1031
+#define IDC_OK_BUTTON                   1031
+#define IDC_DEL                         1032
+#define IDC_CANCEL_BUTTON               1032
+#define IDC_ADDSUBJECT                  1033
+#define IDC_SUBJECTCOMBO                1033
+#define IDC_OK                          1034
+#define IDC_CANCEL                      1035
+#define IDC_TEST                        1035
+#define IDC_TESTID                      1036
+#define IDC_NEXT                        1037
+#define IDC_BACK                        1038
+#define IDC_RESULTLIST                  1045
+#define IDC_TYPECOMBO                   1048
+#define IDC_SELECT                      1049
+#define IDC_SQLCOPY                     1050
+#define IDC_SQLRETURN                   1051
+#define IDC_BUTTON_checkml              1051
+#define IDC_SQLNEW                      1052
+#define IDC_EDIT2                       1052
+#define IDC_BUTTON_liulan               1054
+#define IDC_BUTTON_return               1055
+#define IDC_DELSUBJECT                  1061
+#define IDC_STATIC1                     1062
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        159
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1063
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

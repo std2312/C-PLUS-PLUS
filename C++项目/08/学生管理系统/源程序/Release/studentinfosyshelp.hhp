@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=studentinfosyshelp.chm
+Contents file=Contents.hhc
+Default Window=studentinfosysheip
+Display compile progress=No
+Enhanced decompilation=Yes
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x804 中文(中国)
+Title=学生信息管理系统
+
+[WINDOWS]
+studentinfosysheip=,"Contents.hhc","Index.hhk","main.htm","main.htm","menuhelp.htm",,"functionbtn.htm",,0x2420,,0x3006,,,,,,,,0
+
+
+[FILES]
+main.htm
+functionbtn.htm
+menuhelp.htm
+
+[INFOTYPES]
+

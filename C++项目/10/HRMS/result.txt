@@ -1,0 +1,1 @@
+					  select req_stl from tb_req_leave, tb_employee where (getdate() between req_frm and req_to) 					  and tb_employee.employee_name = 'ÀîËÄ      '  and tb_employee.employee_id = req_emp

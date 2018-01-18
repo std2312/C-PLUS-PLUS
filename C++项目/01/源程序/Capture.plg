@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Capture - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Capture.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Autodlg.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Capture.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\CaptureDlg.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\ControlForm.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Login.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Managedlg.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\mediaplayer2.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\mediaplayerdvd.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\mscomm.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Panel.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\Playdlg.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\PreView.cpp"
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\StageButton.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Capture.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\DVD-RAM 驱动器 (G)\TM\01\源程序\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D.tmp" with contents
+[
+Sa7134Capture.lib MediaTransmit.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Capture.pdb" /debug /machine:I386 /out:"Debug/Capture.exe" /pdbtype:sept 
+".\Debug\Autodlg.obj"
+".\Debug\Capture.obj"
+".\Debug\CaptureDlg.obj"
+".\Debug\ControlForm.obj"
+".\Debug\Login.obj"
+".\Debug\Managedlg.obj"
+".\Debug\mediaplayer2.obj"
+".\Debug\mediaplayerdvd.obj"
+".\Debug\mscomm.obj"
+".\Debug\Panel.obj"
+".\Debug\Playdlg.obj"
+".\Debug\PreView.obj"
+".\Debug\StageButton.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Capture.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+e:\dvd-ram 驱动器 (g)\tm\01\源程序\stdafx.h(23) : fatal error C1083: Cannot open include file: 'Sa7134Capture.h': No such file or directory
+执行 cl.exe 时出错.
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3E.tmp" with contents
+[
+/nologo /o"Debug/Capture.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Autodlg.sbr"
+".\Debug\Capture.sbr"
+".\Debug\CaptureDlg.sbr"
+".\Debug\ControlForm.sbr"
+".\Debug\Login.sbr"
+".\Debug\Managedlg.sbr"
+".\Debug\mediaplayer2.sbr"
+".\Debug\mediaplayerdvd.sbr"
+".\Debug\mscomm.sbr"
+".\Debug\Panel.sbr"
+".\Debug\Playdlg.sbr"
+".\Debug\PreView.sbr"
+".\Debug\StageButton.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3E.tmp"
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Debug\StdAfx.sbr': No such file or directory
+执行 bscmake.exe 时出错.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Capture.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

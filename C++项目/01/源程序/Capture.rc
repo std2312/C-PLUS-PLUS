@@ -1,0 +1,492 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Capture.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Capture.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\42.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Capture"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Capture 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CAPTURE_DIALOG DIALOGEX 0, 0, 612, 442
+STYLE WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "快照",IDC_SNAPSHOT,498,338,50,14,WS_GROUP
+    RADIOBUTTON     "BMP",IDC_BMP,497,363,24,10,0,WS_EX_TRANSPARENT
+    RADIOBUTTON     "JPG",IDC_JPG,522,363,26,10
+    RADIOBUTTON     "VGA",IDC_VGA,553,363,25,10
+    RADIOBUTTON     "PCI",IDC_PCI,579,363,26,10
+    PUSHBUTTON      "显卡类型",IDC_SETTING,554,338,50,14
+    GROUPBOX        "云台控制",IDC_STATIC1,497,30,108,123
+    PUSHBUTTON      "对焦-",IDC_RELEN,510,72,35,17
+    PUSHBUTTON      "聚焦-",IDC_REFOCI,510,45,35,17
+    PUSHBUTTON      "聚焦+",IDC_INFOCI,558,45,35,17
+    PUSHBUTTON      "对焦+",IDC_INLEN,558,72,35,17
+    PUSHBUTTON      "光圈-",IDC_REAPERTURE,510,99,35,17
+    PUSHBUTTON      "光圈+",IDC_INAPERTURE,558,99,35,17
+    PUSHBUTTON      "雨刷+",IDC_INBRUSH,558,126,35,17
+    PUSHBUTTON      "雨刷-",IDC_REBRUSH,510,126,35,17
+    GROUPBOX        "方向控制",IDC_STATIC2,497,166,108,109
+    PUSHBUTTON      "上",IDC_BUTTONUP,539,180,25,25
+    PUSHBUTTON      "左",IDC_BUTTONLEFT,505,211,25,25
+    PUSHBUTTON      "右",IDC_BUTTONRIGHT,573,211,25,25
+    PUSHBUTTON      "下",IDC_BUTTONDOWN,539,242,25,25
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,539,211,25,25
+    PUSHBUTTON      "控制设置",IDC_CONTROL,497,287,50,14,WS_GROUP
+    PUSHBUTTON      "自动监控",IDC_AUTOMATISM,498,384,50,14,WS_GROUP
+    PUSHBUTTON      "录像",IDC_KINESCOPE,497,312,50,14,WS_GROUP
+    PUSHBUTTON      "回放",IDC_PLAY,554,312,50,14,WS_GROUP
+    PUSHBUTTON      "监控管理",IDC_MANAGE,554,287,50,14,WS_GROUP
+    PUSHBUTTON      "停止",IDC_STOP,555,384,50,14
+END
+
+IDD_PANEL_DIALOG DIALOGEX 0, 0, 13, 12
+STYLE DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_NOPARENTNOTIFY
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_CONTROLFORM_DIALOG DIALOG DISCARDABLE  0, 0, 230, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "控制码设置"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "端口设置",IDC_STATIC,22,11,186,67
+    LTEXT           "端 口 号:",IDC_STATIC,36,31,37,8
+    COMBOBOX        IDC_PORT,78,29,48,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置端口",IDC_PORTSET,147,29,50,14
+    LTEXT           "格式为2400,n,8,1",IDC_STATIC,135,55,65,8
+    LTEXT           "环境设置:",IDC_STATIC,35,55,37,8
+    EDITTEXT        IDC_SETTINGS,77,53,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "控制码设置",IDC_STATIC,22,89,186,174
+    LTEXT           "控制动作:",IDC_STATIC,39,114,37,8
+    COMBOBOX        IDC_ACTIONS,84,111,48,83,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_CMDSET,139,111,50,14
+    LTEXT           "字节 1:",IDC_STATIC,39,140,29,8
+    EDITTEXT        IDC_BYTE1,69,138,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 2:",IDC_STATIC,123,140,29,8
+    EDITTEXT        IDC_BYTE2,153,138,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 3:",IDC_STATIC,39,163,29,8
+    EDITTEXT        IDC_BYTE3,69,161,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 4:",IDC_STATIC,123,163,29,8
+    EDITTEXT        IDC_BYTE4,153,161,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 5:",IDC_STATIC,40,187,29,8
+    EDITTEXT        IDC_BYTE5,70,185,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 6:",IDC_STATIC,124,187,29,8
+    EDITTEXT        IDC_BYTE6,154,185,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 7:",IDC_STATIC,40,211,29,8
+    EDITTEXT        IDC_BYTE7,70,209,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节 8:",IDC_STATIC,124,211,29,8
+    EDITTEXT        IDC_BYTE8,154,209,35,12,ES_AUTOHSCROLL
+    LTEXT           "字节数:",IDC_STATIC,40,235,29,8
+    EDITTEXT        IDC_BYTENUM,70,233,35,12,ES_AUTOHSCROLL
+    LTEXT           "动作数:",IDC_STATIC,124,235,29,8
+    EDITTEXT        IDC_ACTIONNUM,154,233,35,12,ES_AUTOHSCROLL
+END
+
+IDD_AUTOMATISM_DIALOG DIALOG DISCARDABLE  0, 0, 232, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "无人广角自动监控模块"
+FONT 9, "宋体"
+BEGIN
+    CHECKBOX        "定时监控",IDC_TIMECHECK,14,16,48,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,59,38,52,
+                    15
+    LTEXT           "开始时间:",IDC_STATIC,21,42,37,8
+    LTEXT           "结束时间:",IDC_STATIC,119,42,37,8
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,158,38,52,
+                    15
+    GROUPBOX        "监控方向设置",IDC_STATIC,15,69,200,55
+    RADIOBUTTON     "广角监控",IDC_AMPLITUDE,23,95,48,10
+    RADIOBUTTON     "水平监控",IDC_HORIZONTAL,92,95,48,10
+    RADIOBUTTON     "垂直监控",IDC_VERTICAL,162,95,48,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,14,31,201,30
+    PUSHBUTTON      "开始",IDC_OK,165,135,50,14
+END
+
+IDD_PLAY_DIALOG DIALOG DISCARDABLE  0, 0, 305, 295
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "视频回放"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "回放",IDC_PLAY,248,267,50,14
+    CONTROL         "",IDC_MEDIAPLAYER1,
+                    "{22D6F312-B0F6-11D0-94AB-0080C74C7E95}",WS_TABSTOP,7,7,
+                    290,248
+    LTEXT           "",IDC_PATH,10,270,228,8
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 178, 115
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,62,44,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,62,59,72,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_OK,39,76,24,11,NOT WS_VISIBLE
+    PUSHBUTTON      "退出",IDC_CANCEL,69,76,24,11,NOT WS_VISIBLE
+    CONTROL         159,IDC_STATIC,"Static",SS_BITMAP,0,0,178,115
+END
+
+IDD_MANAGE_DIALOG DIALOGEX 0, 0, 231, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "监控管理"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_SINGLESEL | 
+                    WS_BORDER | WS_TABSTOP,9,10,108,130,WS_EX_CLIENTEDGE
+    LTEXT           "用户名:",IDC_STATIC,131,31,29,8
+    EDITTEXT        IDC_EDIT1,173,29,40,12,ES_AUTOHSCROLL
+    LTEXT           "密  码:",IDC_STATIC,131,58,29,8
+    EDITTEXT        IDC_EDIT2,173,56,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTONADD,129,82,40,14
+    PUSHBUTTON      "修改",IDC_BUTTONMOD,173,82,40,14
+    PUSHBUTTON      "删除",IDC_BUTTONDEL,129,111,40,14
+    PUSHBUTTON      "日志",IDC_BUTTON4,173,111,40,14
+    GROUPBOX        "用户管理",IDC_STATIC,123,11,97,127
+    CONTROL         "",IDC_STATIC1,"Static",SS_BLACKFRAME,11,153,208,1
+    EDITTEXT        IDC_EDIT3,9,163,210,161,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Capture Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Capture\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Capture.EXE\0"
+            VALUE "ProductName", "Capture 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CAPTURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 605
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 435
+    END
+
+    IDD_PANEL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 12
+    END
+
+    IDD_CONTROLFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_AUTOMATISM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_PLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_MANAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BKBUTTON            BITMAP  DISCARDABLE     "res\\按钮.bmp"
+IDB_NOSIGNAL            BITMAP  DISCARDABLE     "res\\BK.bmp"
+IDB_BKGROUND            BITMAP  DISCARDABLE     "res\\BackGround.bmp"
+IDB_BOTTOMBAR           BITMAP  DISCARDABLE     "res\\BottomBand.bmp"
+IDB_CLOSEBT             BITMAP  DISCARDABLE     "res\\closebutton.bmp"
+IDB_CLOSEHOTBT          BITMAP  DISCARDABLE     "res\\closehotbutton.bmp"
+IDB_LEFTBAR             BITMAP  DISCARDABLE     "res\\LeftBand.bmp"
+IDB_LEFTTITLE           BITMAP  DISCARDABLE     "res\\LeftTitle.bmp"
+IDB_MAXBT               BITMAP  DISCARDABLE     "res\\maxbutton.bmp"
+IDB_MAXHOTBT            BITMAP  DISCARDABLE     "res\\maxhotbutton.bmp"
+IDB_MIDTITLE            BITMAP  DISCARDABLE     "res\\MidTitle.bmp"
+IDB_MINBT               BITMAP  DISCARDABLE     "res\\minbutton.bmp"
+IDB_MINHOTBT            BITMAP  DISCARDABLE     "res\\minhotbutton.bmp"
+IDB_RIGHTBAR            BITMAP  DISCARDABLE     "res\\RightBand.bmp"
+IDB_RIGHTTITLE          BITMAP  DISCARDABLE     "res\\RightTitle.bmp"
+IDB_LOGIN               BITMAP  DISCARDABLE     "res\\登录.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAPTURE_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_CONTROLFORM_DIALOG DLGINIT
+BEGIN
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x316d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x326d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x336d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x346d, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xcfc9, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xc2cf, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xf3d7, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xd2d3, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xb9bd, 0xdbbe, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xb9bd, 0xdbbe, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xd4b6, 0xb9bd, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xd4b6, 0xb9bd, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xe2b9, 0xa6c8, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xe2b9, 0xa6c8, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xead3, 0xa2cb, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xead3, 0xa2cb, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xa3cd, 0xb9d6, 0xbbce, "\000" 
+    0
+END
+
+IDD_PLAY_DIALOG DLGINIT
+BEGIN
+    IDC_MEDIAPLAYER1, 0x376, 340, 0
+0x0000, 0x0000, 0x0001, 0x0000, 0x2cf5, 0x0000, 0x2673, 0x0000, 0x0003, 
+0xffff, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x0000, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0x4014, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x0003, 
+0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0013, 0x0000, 0x0000, 
+0x0013, 0xffff, 0x00ff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0004, 0x0000, 
+0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 
+0xffff, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0xffff, 
+0xffff, 0x000b, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x0005, 
+0x0000, 0x0000, 0x0000, 0x3ff0, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xbff0, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 
+0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 
+0x000b, 0xffff, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0013, 0x0000, 
+0x0000, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x000b, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Capture(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Capture.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

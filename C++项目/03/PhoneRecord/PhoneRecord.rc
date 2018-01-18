@@ -1,0 +1,542 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PhoneRecord.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PhoneRecord.ico"
+IDI_MANUFACTURE         ICON    DISCARDABLE     "res\\产品.ico"
+IDI_EMPLOYEE            ICON    DISCARDABLE     "res\\员工.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PhoneRecord"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PhoneRecord 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PHONERECORD_DIALOG DIALOGEX 0, 0, 491, 343
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "企业电话语音录音管理系统"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,86,12,399,235,WS_EX_CLIENTEDGE
+    CONTROL         "来电管理",IDC_PHONEIN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,12,93,59,15
+    CONTROL         "去电管理",IDC_PHONEOUT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,12,46,59,15
+    CONTROL         "录音管理",IDC_RECORD,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    12,140,59,15
+    CONTROL         "客户信息",IDC_CLIENT,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    12,187,59,15
+    CONTROL         "员工信息",IDC_EMPLOYEE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,12,234,59,15
+    CONTROL         "产品信息",IDC_MANUFACTURE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,12,281,59,15
+    GROUPBOX        "电话拨出",IDC_STATIC,86,254,399,77
+    LTEXT           "选择通道号：",IDC_STATIC,110,279,49,8
+    COMBOBOX        IDC_COMBO1,174,277,48,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "呼叫电话号：",IDC_STATIC,251,279,49,8
+    EDITTEXT        IDC_EDIT1,314,277,59,12,ES_AUTOHSCROLL
+    CONTROL         "拨号",IDC_DIALUP,"Button",BS_OWNERDRAW | WS_TABSTOP,315,
+                    306,59,15
+    CONTROL         "挂机",IDC_HANGUP,"Button",BS_OWNERDRAW | WS_TABSTOP,414,
+                    306,59,15
+    CONTROL         "插入电话",IDC_PHONEBOOK,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,413,276,59,15
+END
+
+IDD_EMPLOYEES_DIALOG DIALOGEX 0, 0, 290, 198
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "员工信息管理"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,8,50,180,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "员工编号：",IDC_STATIC,67,15,38,8
+    EDITTEXT        IDC_EDIT1,109,12,56,12,ES_AUTOHSCROLL
+    LTEXT           "员工姓名：",IDC_STATIC,182,15,38,8
+    EDITTEXT        IDC_EDIT2,225,12,56,12,ES_AUTOHSCROLL
+    LTEXT           "用 户 名：",IDC_STATIC,67,40,39,8
+    EDITTEXT        IDC_EDIT3,109,38,56,12,ES_AUTOHSCROLL
+    LTEXT           "密    码：",IDC_STATIC,182,40,39,8
+    EDITTEXT        IDC_EDIT4,225,38,56,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "员工性别：",IDC_STATIC,67,65,38,8
+    COMBOBOX        IDC_COMBO1,109,62,56,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "员工学历：",IDC_STATIC,182,65,38,8
+    EDITTEXT        IDC_EDIT5,225,62,56,12,ES_AUTOHSCROLL
+    LTEXT           "身份证号：",IDC_STATIC,67,90,38,8
+    EDITTEXT        IDC_EDIT6,109,88,56,12,ES_AUTOHSCROLL
+    LTEXT           "联系电话：",IDC_STATIC,182,90,38,8
+    EDITTEXT        IDC_EDIT7,225,88,56,12,ES_AUTOHSCROLL
+    LTEXT           "备注信息：",IDC_STATIC,67,115,38,8
+    EDITTEXT        IDC_EDIT8,109,113,172,49,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "添加",IDC_BUTADD,"Button",BS_OWNERDRAW | WS_TABSTOP,65,
+                    174,50,14
+    CONTROL         "保存",IDC_BUTSAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    120,174,50,14
+    CONTROL         "修改",IDC_BUTMOD,"Button",BS_OWNERDRAW | WS_TABSTOP,176,
+                    174,50,14
+    CONTROL         "删除",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,231,
+                    174,50,14
+END
+
+IDD_CLIENT_DIALOG DIALOGEX 0, 0, 335, 250
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "客户信息管理"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    10,8,314,88,WS_EX_CLIENTEDGE
+    LTEXT           "客户编号：",IDC_STATIC,12,108,38,8
+    EDITTEXT        IDC_EDIT1,54,106,56,12,ES_AUTOHSCROLL
+    LTEXT           "客户名称：",IDC_STATIC,11,129,38,8
+    EDITTEXT        IDC_EDIT2,54,127,107,12,ES_AUTOHSCROLL
+    LTEXT           "联 系 人：",IDC_STATIC,120,108,39,8
+    EDITTEXT        IDC_EDIT3,162,106,56,12,ES_AUTOHSCROLL
+    LTEXT           "联系电话：",IDC_STATIC,226,108,38,8
+    EDITTEXT        IDC_EDIT4,268,106,56,12,ES_AUTOHSCROLL
+    LTEXT           "联系地址：",IDC_STATIC,12,150,38,8
+    LTEXT           "E-mail :",IDC_STATIC,175,129,33,8
+    EDITTEXT        IDC_EDIT6,54,148,269,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,217,127,107,12,ES_AUTOHSCROLL
+    LTEXT           "备注信息：",IDC_STATIC,12,170,38,8
+    EDITTEXT        IDC_EDIT7,54,169,269,49,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "添加",IDC_BUTADD,"Button",BS_OWNERDRAW | WS_TABSTOP,10,
+                    228,50,14
+    CONTROL         "保存",IDC_BUTSAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,97,
+                    228,50,14
+    CONTROL         "修改",IDC_BUTMOD,"Button",BS_OWNERDRAW | WS_TABSTOP,186,
+                    228,50,14
+    CONTROL         "删除",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,273,
+                    228,50,14
+END
+
+IDD_MANUFACTURE_DIALOG DIALOGEX 0, 0, 329, 244
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "产品信息管理"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_SINGLESEL | 
+                    WS_BORDER | WS_TABSTOP,7,8,314,44,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,62,76,246,12,ES_AUTOHSCROLL
+    LTEXT           "产品名称：",IDC_STATIC,19,78,38,8
+    EDITTEXT        IDC_EDIT2,62,97,246,103,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "产品介绍：",IDC_STATIC,19,99,38,8
+    CONTROL         "添加",IDC_BUTADD,"Button",BS_OWNERDRAW | WS_TABSTOP,7,
+                    220,50,14
+    CONTROL         "保存",IDC_BUTSAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,95,
+                    220,50,14
+    CONTROL         "修改",IDC_BUTMOD,"Button",BS_OWNERDRAW | WS_TABSTOP,183,
+                    220,50,14
+    CONTROL         "删除",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,271,
+                    220,50,14
+    GROUPBOX        "产品信息：",IDC_STATIC,7,60,315,152
+END
+
+IDD_PHONEOUT_DIALOG DIALOGEX 0, 0, 298, 269
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "去电管理"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | WS_BORDER | WS_TABSTOP,
+                    7,0,282,187,WS_EX_CLIENTEDGE
+    GROUPBOX        "按条件查询",IDC_STATIC,7,193,282,40
+    COMBOBOX        IDC_COMBO1,60,209,48,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询字段：",IDC_STATIC,19,212,38,8
+    COMBOBOX        IDC_COMBO2,163,210,48,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询内容：",IDC_STATIC,120,213,38,8
+    CONTROL         "重拨",IDC_BUTDIALUP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    60,244,50,14
+    CONTROL         "删除",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,204,
+                    244,50,14
+    CONTROL         "查询",IDC_BUTQUERY,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    226,210,50,14
+END
+
+IDD_PHONEIN_DIALOG DIALOGEX 0, 0, 298, 269
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "来电管理"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOLABELWRAP | WS_BORDER | WS_TABSTOP,
+                    7,0,282,187,WS_EX_CLIENTEDGE
+    GROUPBOX        "按条件查询",IDC_STATIC,7,193,282,40
+    COMBOBOX        IDC_COMBO1,60,209,48,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询字段：",IDC_STATIC,19,212,38,8
+    COMBOBOX        IDC_COMBO2,163,210,48,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询内容：",IDC_STATIC,120,213,38,8
+    CONTROL         "回拨",IDC_BUTDIALUP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    60,244,50,14
+    CONTROL         "删除",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,204,
+                    244,50,14
+    CONTROL         "查询",IDC_BUTQUERY,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    226,209,50,14
+END
+
+IDD_RECORD_DIALOG DIALOGEX 0, 0, 350, 250
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "电话录音管理"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,
+                    7,7,336,162,WS_EX_CLIENTEDGE
+    GROUPBOX        "录音文件管理",IDC_STATIC,7,177,336,66
+    EDITTEXT        IDC_EDIT1,60,196,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,156,196,173,12,ES_AUTOHSCROLL
+    LTEXT           "文件名称：",IDC_STATIC,22,198,38,8
+    LTEXT           "文件路径：",IDC_STATIC,115,199,38,8
+    CONTROL         "修改文件路径",IDC_BUTMODPATH,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,156,219,50,14
+    CONTROL         "删除文件",IDC_BUTDEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    217,219,50,14
+    CONTROL         "播放文件",IDC_BUTPLAY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,279,219,50,14
+END
+
+IDD_PHONEBOOK_DIALOG DIALOG DISCARDABLE  0, 0, 259, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "双击插入客户公司电话号码"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,0,258,171
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 171, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录框"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,76,19,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,76,42,65,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "登录",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,30,66,50,
+                    14
+    CONTROL         "退出",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,91,66,
+                    50,14
+    LTEXT           "用户名：",IDC_STATIC,30,22,31,8
+    LTEXT           "密  码：",IDC_STATIC,30,45,31,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PhoneRecord Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PhoneRecord\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PhoneRecord.EXE\0"
+            VALUE "ProductName", "PhoneRecord 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PHONERECORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_EMPLOYEES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_CLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_MANUFACTURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_PHONEOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_PHONEIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_RECORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_PHONEBOOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "通话管理"
+    BEGIN
+        MENUITEM "去电管理",                    ID_MENUPHONEOUT
+        MENUITEM "来电管理",                    ID_MENUPHONEIN
+        MENUITEM "电话录音管理",                ID_MENURECORD
+    END
+    POPUP "基本信息管理"
+    BEGIN
+        MENUITEM "客户信息管理",                ID_MENUCLIENT
+        MENUITEM "员工信息管理",                ID_MENUEMPLOYEES
+        MENUITEM "企品信息管理",                ID_MENUMANUFACTURE
+    END
+    POPUP "系统管理"
+    BEGIN
+        MENUITEM "关于",                        ID_MENUABOUT
+        MENUITEM "退出",                        ID_MENUEXIT
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "企业电话语音录音管理系统"
+    BEGIN
+        MENUITEM "显示",                        ID_MENUSHOW
+        MENUITEM "隐藏",                        ID_MENUHIDE
+        MENUITEM "退出",                        ID_MENUCLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EMPLOYEES_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BUT_DOWN            BITMAP  DISCARDABLE     "res\\BUTDOWN.bmp"
+IDB_BUT_MOVE            BITMAP  DISCARDABLE     "res\\BUTMOVE.bmp"
+IDB_BUT_UP              BITMAP  DISCARDABLE     "res\\BUTUP.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PhoneRecord(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PhoneRecord.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
